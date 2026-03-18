@@ -1,0 +1,16 @@
+{
+    "brand": "TOYOTA",
+    "model": "AQUA",
+    "yom": 2016,
+    "engine_cc": 1500,
+    "gear": "Automatic",
+    "fuel_type": "Hybrid",
+    "mileage_km": 65000,
+    "town": "Colombo",
+    "leasing": "No Leasing",
+    "condition": "USED",
+    "air_condition": 1,
+    "power_steering": 1,
+    "power_mirror": 1,
+    "power_window": 1
+}

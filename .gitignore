@@ -1,0 +1,10 @@
+backend/__pycache__/
+backend/*.pyc
+backend/.env
+backend/*.pkl
+backend/car_price_dataset.csv
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+.DS_Store
+Thumbs.db
