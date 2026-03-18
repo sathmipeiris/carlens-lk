@@ -1,5 +1,8 @@
 backend/__pycache__/
 backend/*.pyc
+backend/car_price_env/
+backend/venv/
+backend/.venv/
 backend/.env
 backend/*.pkl
 backend/car_price_dataset.csv
