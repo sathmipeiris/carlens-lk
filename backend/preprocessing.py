@@ -39,7 +39,8 @@ def feature_engineering(df: pd.DataFrame) -> pd.DataFrame:
     """Create new features specific to the Sri Lankan used-car market."""
     # 1. Car Age (critical feature)
     current_year = 2025
-    df['Car_Age'] = current_year - df['YOM']
+    # df['Car_Age'] = current_year - df['YOM']
+    df['Car_Age'] = datetime.now().year - df['YOM']
 
     # 2. Mileage per Year
     df['Mileage_Per_Year'] = df['Millage(KM)'] / (df['Car_Age'] + 1)  # +1 to avoid division by zero

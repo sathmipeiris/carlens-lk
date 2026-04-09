@@ -1,0 +1,987 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend> car_price_env\Scripts\python.exe riyasewana_scraper.py --pages 2 --visible
+C:\Users\sathmi\AppData\Local\Programs\Python\Python312\python.exe: can't open file 'C:\\Users\\sathmi\\Desktop\\DATA MANGEMENT FRONTEND\\backend\\riyasewana_scraper.py': [Errno 2] No such file or directory
+PS C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend> car_price_env\Scripts\python.exe riyasewana.py --pages 2 --visible
+Traceback (most recent call last):
+  File "C:\Users\sathmi\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+  File "C:\Users\sathmi\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 708, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\riyasewana.py", line 1298, in <module>
+    scraper = RiyasewanaScraper(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\riyasewana.py", line 1001, in __init__
+    self.driver     = self._init_driver(headless)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\riyasewana.py", line 1013, in _init_driver
+    return webdriver.Firefox(service=svc, options=opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 71, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 263, in __init__
+    self.start_session(capabilities)
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 366, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 455, in execute
+    response = cast(RemoteConnection, self.command_executor).execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 407, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 431, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\urllib3\poolmanager.py", line 459, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathmi\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1430, in getresponse
+    self.close()
+  File "C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend\car_price_env\Lib\site-packages\urllib3\connection.py", line 369, in close
+    def close(self) -> None:
+
+KeyboardInterrupt
+PS C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend> dir "C:\Program Files\Mozilla Firefox\firefox.exe"
+
+
+    Directory: C:\Program Files\Mozilla Firefox
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         3/11/2026   6:52 PM         707200 firefox.exe
+
+
+PS C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend> car_price_env\Scripts\python.exe riyasewana.py --pages 2 --visible
+
+============================================================
+  Riyasewana scraper — max 2 pages
+  Output: riyasewana_new_listings.csv
+============================================================
+
+
+Page 1/2 — https://riyasewana.com/search/cars?page=1
+  44 new listings found
+  [1/44] https://riyasewana.com/buy/suzuki-wagon-r-sale-homagama-11350860
+    ✓ SUZUKI Wagon R FX Safety Import 2024 3000.0 km  Rs.69.5L  Homagama
+  [2/44] https://riyasewana.com/buy/mg-zs-sale-kesbewa-11369377
+    ✓ MG ZS 2018 84500.0 km  Rs.83.0L  Bandaragama
+  [3/44] https://riyasewana.com/buy/nissan-ad-wagon-sale-moratuwa-11370986
+    ✓ NISSAN AD Wagon 1996 302.0 km  Rs.22.5L  Moratuwa
+  [4/44] https://riyasewana.com/buy/suzuki-hustler-sale-polgahawela-11341553
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [5/44] https://riyasewana.com/buy/bajaj-pulsar135-sale-gampaha-11378202
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [6/44] https://riyasewana.com/buy/honda-dio-sale-hanwella-11378201
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [7/44] https://riyasewana.com/buy/toyota-soluna-sale-hatton-11378200
+    → skipped (missing: ['Millage(KM)', 'Town'])
+    → skipped (no price/year)
+  [8/44] https://riyasewana.com/buy/honda-civic-sale-kuliyapitiya-11378198
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [9/44] https://riyasewana.com/buy/micro-mx7-sale-nittambuwa-11378197
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [10/44] https://riyasewana.com/buy/toyota-prius-sale-minuwangoda-11378196
+    ✓ TOYOTA Prius 2011 169000.0 km  Rs.92.5L  Minuwangoda
+  [11/44] https://riyasewana.com/buy/toyota-axio-wxb-sale-katunayake-11378195
+    ✓ TOYOTA Axio WXB 2017 101000.0 km  Rs.1.0L  Katunayake
+  [12/44] https://riyasewana.com/buy/hero-honda-dawn-sale-panadura-11377268
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [13/44] https://riyasewana.com/buy/tata-dimo-batta-sale-kurunegala-11378193
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [14/44] https://riyasewana.com/buy/toyota-hilux-thailand-sale-kaduwela-11378192
+    ✓ TOYOTA Hilux Thailand Auto 2007 180000.0 km  Rs.1.8L  Kaduwela
+  [15/44] https://riyasewana.com/buy/toyota-prius-sale-beruwala-11378191
+    ✓ TOYOTA Prius 2013 151000.0 km  Rs.111.8L  Beruwala
+  [16/44] https://riyasewana.com/buy/bajaj-discover-sale-minuwangoda-11378187
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [17/44] https://riyasewana.com/buy/mitsubishi-lancer-wagon-sale-gampaha-11378186
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [18/44] https://riyasewana.com/buy/tata-dimo-batta-sale-kurunegala-11378185
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [19/44] https://riyasewana.com/buy/tata-dimo-batta-sale-chilaw-11378184
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [20/44] https://riyasewana.com/buy/toyota-kdh-200-sale-embilipitiya-11378183
+    → skipped (no price/year)
+  [21/44] https://riyasewana.com/buy/mitsubishi-pajero-sale-divulapitiya-11378181
+    → skipped (no price/year)
+  [22/44] https://riyasewana.com/buy/bajaj-discover-135-sale-divulapitiya-11378180
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [23/44] https://riyasewana.com/buy/suzuki-maruti-800-sale-matugama-11378179
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [24/44] https://riyasewana.com/buy/jac-10-5-full-sale-kurunegala-11378178
+    ✓ JAC 10.5 Full Body 2008 24152.0 km  Rs.25.5L  Kurunegala
+  [25/44] https://riyasewana.com/buy/bajaj-ct-100-sale-kandy-11378177
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [26/44] https://riyasewana.com/buy/micro-panda-sale-piliyandala-11378176
+    ✓ MICRO Panda 2015 33000.0 km  Rs.31.9L  Piliyandala
+  [27/44] https://riyasewana.com/buy/toyota-prius-sale-minuwangoda-11378175
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [28/44] https://riyasewana.com/buy/toyota-corolla-141-sale-kottawa-11378174
+    ✓ TOYOTA Corolla 141 GLI 2013 62000.0 km  Rs.0.6L  Kottawa
+  [29/44] https://riyasewana.com/buy/nissan-march-sale-katunayake-11378173
+    ✓ NISSAN March 1995 123456.0 km  Rs.17.2L  Katunayake
+  [30/44] https://riyasewana.com/buy/chevrolet-cruze-gm-sale-kurunegala-11378172
+    ✓ CHEVROLET Cruze GM Limited 2006 170000.0 km  Rs.38.2L  Kurunegala
+  [31/44] https://riyasewana.com/buy/suzuki-burgman-sale-nittambuwa-11378171
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [32/44] https://riyasewana.com/buy/yamaha-ray-zr-sale-avissawella-11378170
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [33/44] https://riyasewana.com/buy/bajaj-2-stroke-sale-homagama-11378169
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [34/44] https://riyasewana.com/buy/tata-1512-sale-nittambuwa-11378167
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [35/44] https://riyasewana.com/buy/nissan-civilian-sale-polgahawela-11378166
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [36/44] https://riyasewana.com/buy/suzuki-alto-sale-horana-11378165
+    ✓ SUZUKI Alto 2015 156000.0 km  Rs.35.5L  Horana
+  [37/44] https://riyasewana.com/buy/suzuki-a-star-sale-battaramulla-11378164
+    ✓ SUZUKI A-Star 2010 107000.0 km  Rs.39.9L  Battaramulla
+  [38/44] https://riyasewana.com/buy/toyota-cressida-rx72-sale-panadura-11378163
+    ✓ TOYOTA Cressida RX72 1987 2131.0 km  Rs.16.9L  Panadura
+  [39/44] https://riyasewana.com/buy/suzuki-wagon-r-sale-kandy-11378162
+    ✓ SUZUKI Wagon R Stingray 2014 142000.0 km  Rs.55.8L  Kandy
+  [40/44] https://riyasewana.com/buy/bajaj-pulsar-150-sale-colombo-11378161
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [41/44] https://riyasewana.com/buy/tata-nexon-sale-moratuwa-11373862
+    ✓ TATA Nexon 2020 26000.0 km  Rs.0.3L  Moratuwa
+  [42/44] https://riyasewana.com/buy/mitsubishi-lancer-box-sale-divulapitiya-11378159
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [43/44] https://riyasewana.com/buy/toyota-hilux-1kd-sale-kurunegala-11378158
+    ✓ TOYOTA Hilux 1kd 2009 187000.0 km  Rs.110.0L  Kurunegala
+  [44/44] https://riyasewana.com/buy/toyota-lh61-sale-kegalle-11378157
+    ✓ TOYOTA Lh61 1986 519823.0 km  Rs.45.5L  Kegalle
+  [csv] 19 total records saved to riyasewana_new_listings.csv
+  Page 1 done: +19 new (total new: 19)
+
+Page 2/2 — https://riyasewana.com/search/cars?page=2
+  44 new listings found
+  [1/44] https://riyasewana.com/buy/toyota-premio-sale-kandy-11377299
+    ✓ TOYOTA Premio 2018 40000.0 km  Rs.165.0L  Kandy
+  [2/44] https://riyasewana.com/buy/honda-fit-gp1-sale-kurunegala-11376112
+    ✓ HONDA Fit GP1 Anniversary 2015 116000.0 km  Rs.67.2L  Kurunegala
+  [3/44] https://riyasewana.com/buy/honda-civic-sale-malabe-11377701
+    → skipped (missing: ['Engine (cc)'])
+    → skipped (no price/year)
+  [4/44] https://riyasewana.com/buy/toyota-prius-sale-ragama-11361796
+    ✓ TOYOTA Prius 2012 136000.0 km  Rs.97.0L  Ragama
+  [5/44] https://riyasewana.com/buy/toyota-vitz-sale-colombo-11378108
+    ✓ TOYOTA Vitz 2018 100000.0 km  Rs.73.9L  Colombo
+  [6/44] https://riyasewana.com/buy/toyota-passo-sale-gampaha-11378106
+    ✓ TOYOTA PASSO 2008 148000.0 km  Rs.47.8L  Gampaha
+  [7/44] https://riyasewana.com/buy/micro-panda-sale-panadura-11378102
+    ✓ MICRO Panda 2016 93000.0 km  Rs.32.0L  Panadura
+  [8/44] https://riyasewana.com/buy/suzuki-hustler-j-sale-gampaha-11378089
+    ✓ SUZUKI Hustler J Style 2016 81000.0 km  Rs.68.8L  Gampaha
+  [9/44] https://riyasewana.com/buy/nissan-wingroad-sale-gampaha-11378084
+    ✓ NISSAN Wingroad 2007 187456.0 km  Rs.20.9L  Gampaha
+  [10/44] https://riyasewana.com/buy/honda-fit-shuttle-sale-gampaha-11378083
+    ✓ HONDA Fit Shuttle 2014 132000.0 km  Rs.1.3L  Gampaha
+  [11/44] https://riyasewana.com/buy/toyota-prius-sale-colombo-11378082
+    ✓ TOYOTA Prius 2015 73000.0 km  Rs.125.0L  Colombo
+  [12/44] https://riyasewana.com/buy/honda-fit-gp1-sale-matale-11375932
+    ✓ HONDA FIT GP1 2011 154000.0 km  Rs.60.5L  Matale
+  [13/44] https://riyasewana.com/buy/mitsubishi-galant-sale-nittambuwa-11378075
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [14/44] https://riyasewana.com/buy/toyota-corolla-ae100-sale-kurunegala-11378070
+    ✓ TOYOTA Corolla AE100 1994 267000.0 km  Rs.29.5L  Kurunegala
+  [15/44] https://riyasewana.com/buy/suzuki-baleno-sale-avissawella-11378065
+    ✓ SUZUKI Baleno 2018 80000.0 km  Rs.0.8L  Avissawella
+  [16/44] https://riyasewana.com/buy/toyota-allion-260-sale-malabe-11378064
+    ✓ TOYOTA Allion 260 2008 160000.0 km  Rs.79.8L  Malabe
+  [17/44] https://riyasewana.com/buy/nissan-fb14-sale-kurunegala-11378062
+    ✓ NISSAN FB14 1994 255010.0 km  Rs.26.0L  Kurunegala
+  [18/44] https://riyasewana.com/buy/nissan-march-k11-sale-gampaha-11378058
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [19/44] https://riyasewana.com/buy/toyota-ae110-sprinter-sale-kandy-11378043
+    ✓ TOYOTA Ae110 Sprinter 1997 165000.0 km  Rs.40.0L  Kandy
+  [20/44] https://riyasewana.com/buy/nissan-march-k11-sale-kandy-11378042
+    ✓ NISSAN March K11 2000 187000.0 km  Rs.29.9L  Peradeniya
+  [21/44] https://riyasewana.com/buy/toyota-vitz-safety-sale-mirigama-11378039
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [22/44] https://riyasewana.com/buy/suzuki-wagon-r-sale-colombo-11378038
+    ✓ SUZUKI WAGON R FZ SEAFTI 2014 94053.0 km  Rs.0.9L  Kaduwela
+  [23/44] https://riyasewana.com/buy/toyota-axio-sale-colombo-11378037
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [24/44] https://riyasewana.com/buy/volvo-240-glt-sale-colombo-11378029
+    ✓ VOLVO 240 GLT 2.3 1988 102000.0 km  Rs.40.0L  Colombo
+  [25/44] https://riyasewana.com/buy/nissan-fb13-sale-kurunegala-11378022
+    → skipped (missing: ['Engine (cc)', 'Millage(KM)'])
+    → skipped (no price/year)
+  [26/44] https://riyasewana.com/buy/honda-insight-sale-ragama-11378021
+    ✓ HONDA Insight 2010 176000.0 km  Rs.68.0L  Ragama
+  [27/44] https://riyasewana.com/buy/toyota-axio-sale-homagama-11378020
+    ✓ TOYOTA Axio 2016 100000.0 km  Rs.95.0L  Homagama
+  [28/44] https://riyasewana.com/buy/suzuki-wagon-r-sale-colombo-11378016
+    ✓ SUZUKI Wagon R Stingray Safety 2018 127202.0 km  Rs.1.3L  Kaduwela
+  [29/44] https://riyasewana.com/buy/holden-statesman-sale-kurunegala-11378011
+    ✓ HOLDEN Statesman 2026 25000.0 km  Rs.0.2L  Kurunegala
+  [30/44] https://riyasewana.com/buy/mitsubishi-lancer-box-sale-negombo-11378009
+    ✓ MITSUBISHI Lancer Box 2026 98000.0 km  Rs.1.2L  Negombo
+  [31/44] https://riyasewana.com/buy/nissan-pulsar-sale-kandy-11378006
+    ✓ NISSAN Pulsar 1999 25000.0 km  Rs.9.5L  Kandy
+  [32/44] https://riyasewana.com/buy/suzuki-maruti-sale-kadawatha-11376297
+    ✓ SUZUKI Maruti 2006 78000.0 km  Rs.0.8L  Kadawatha
+  [33/44] https://riyasewana.com/buy/toyota-axio-sale-horana-11377998
+    ✓ TOYOTA Axio 2013 156000.0 km  Rs.78.8L  Horana
+  [34/44] https://riyasewana.com/buy/suzuki-esteem-sale-badulla-11377992
+    ✓ SUZUKI Esteem 2005 131000.0 km  Rs.23.5L  Badulla
+  [35/44] https://riyasewana.com/buy/toyota-vios-sale-malabe-11377990
+    ✓ TOYOTA Vios 2004 195440.0 km  Rs.47.0L  Malabe
+  [36/44] https://riyasewana.com/buy/nissan-march-k11-sale-gampaha-11377989
+    ✓ NISSAN March K11 2000 62000.0 km  Rs.34.5L  Gampaha
+  [37/44] https://riyasewana.com/buy/toyota-axio-wxb-sale-wattala-11377983
+    ✓ TOYOTA Axio WXB 2017 108000.0 km  Rs.126.5L  Wattala
+  [38/44] https://riyasewana.com/buy/toyota-vios-sale-balangoda-11377978
+    ✓ TOYOTA Vios 2004 207000.0 km  Rs.52.0L  Balangoda
+  [39/44] https://riyasewana.com/buy/suzuki-maruti-efi-sale-matara-11377973
+    ✓ SUZUKI MARUTI EFI 2005 41000.0 km  Rs.19.2L  Matara
+  [40/44] https://riyasewana.com/buy/toyota-passo-sale-nugegoda-11377971
+    ✓ TOYOTA Passo 2008 126000.0 km  Rs.48.0L  Nugegoda
+  [41/44] https://riyasewana.com/buy/micro-panda-cross-sale-negombo-11377970
+    ✓ MICRO Panda Cross 2013 70000.0 km  Rs.32.9L  Negombo
+  [42/44] https://riyasewana.com/buy/suzuki-alto-sale-embilipitiya-11376165
+    ✓ SUZUKI Alto 2016 98000.0 km  Rs.37.5L  Embilipitiya
+  [43/44] https://riyasewana.com/buy/suzuki-alto-sale-embilipitiya-11370925
+    → duplicate (SUZUKI Alto 2016 Rs.37.5L)
+  [44/44] https://riyasewana.com/buy/tata-indigo-sale-horana-11377968
+    ✓ TATA Indigo 2005 65000.0 km  Rs.18.5L  Horana
+  [csv] 56 total records saved to riyasewana_new_listings.csv
+  Page 2 done: +37 new (total new: 56)
+
+============================================================
+  Scraping complete — 56 new records added
+  Output: riyasewana_new_listings.csv
+============================================================
+
+PS C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend> car_price_env\Scripts\python.exe riyasewana_scraper.py --pages 100
+C:\Users\sathmi\AppData\Local\Programs\Python\Python312\python.exe: can't open file 'C:\\Users\\sathmi\\Desktop\\DATA MANGEMENT FRONTEND\\backend\\riyasewana_scraper.py': [Errno 2] No such file or directory
+PS C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend> car_price_env\Scripts\python.exe riyasewana.py --pages 100
+[resume] 2 pages, 88 URLs already scraped
+[dedup] loaded 56 existing fingerprints
+
+============================================================
+  Riyasewana scraper — max 100 pages
+  Output: riyasewana_new_listings.csv
+============================================================
+
+Page 1: already scraped — skipping
+Page 2: already scraped — skipping
+
+Page 3/100 — https://riyasewana.com/search/cars?page=3
+  20 new listings found
+  [1/20] https://riyasewana.com/buy/suzuki-wagon-r-sale-kandana-11373491
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [2/20] https://riyasewana.com/buy/bmw-740e-sale-kandy-11376531
+    ✓ BMW 740e 2016 26000.0 km  Rs.335.0L  Kandy
+  [3/20] https://riyasewana.com/buy/toyota-allion-240-sale-kaduwela-11366469
+    ✓ TOYOTA Allion 240 2003 160000.0 km  Rs.76.2L  Kaduwela
+  [4/20] https://riyasewana.com/buy/toyota-belta-sale-kaduwela-11370332
+    ✓ TOYOTA Belta 2007 159000.0 km  Rs.59.5L  Kaduwela
+  [5/20] https://riyasewana.com/buy/toyota-carina-at-sale-ratnapura-11377967
+    ✓ TOYOTA Carina At 150 1989 199500.0 km  Rs.9.3L  Ratnapura
+  [6/20] https://riyasewana.com/buy/toyota-vitz-scp-sale-homagama-11377960
+    ✓ TOYOTA Vitz SCP 90 2009 169808.0 km  Rs.60.2L  Homagama
+  [7/20] https://riyasewana.com/buy/nissan-sylphy-sale-negombo-11377953
+    ✓ NISSAN Sylphy 2014 175000.0 km  Rs.80.0L  Negombo
+  [8/20] https://riyasewana.com/buy/toyota-axio-161-sale-negombo-11377952
+    ✓ TOYOTA Axio 161 2013 125000.0 km  Rs.1.2L  Negombo
+  [9/20] https://riyasewana.com/buy/toyota-corolla-ae101-sale-kottawa-11377951
+    ✓ TOYOTA Corolla Ae101 Ceres 2002 190000.0 km  Rs.1.9L  Kottawa
+  [10/20] https://riyasewana.com/buy/toyota-carina-192-sale-gampaha-11375870
+    ✓ TOYOTA Carina 192 2006 153000.0 km  Rs.38.9L  Gampaha
+  [11/20] https://riyasewana.com/buy/toyota-premio-g-sale-panadura-11377947
+    ✓ TOYOTA Premio G Superior 2016 140000.0 km  Rs.132.5L  Panadura
+  [12/20] https://riyasewana.com/buy/nissan-leaf-sale-kalutara-11375856
+    → skipped (missing: ['Engine (cc)'])
+    → skipped (no price/year)
+  [13/20] https://riyasewana.com/buy/honda-grace-ex-sale-dehiwala-mount-lavinia-11377943
+    ✓ HONDA Grace EX Safety 2017 61520.0 km  Rs.0.6L  Dehiwala
+  [14/20] https://riyasewana.com/buy/nissan-sunny-wagon-sale-kandy-11377942
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [15/20] https://riyasewana.com/buy/mitsubishi-lancer-box-sale-kurunegala-11375848
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [16/20] https://riyasewana.com/buy/suzuki-alto-sale-moratuwa-11377940
+    ✓ SUZUKI Alto 2007 217000.0 km  Rs.2.2L  Moratuwa
+  [17/20] https://riyasewana.com/buy/suzuki-maruti-800-sale-colombo-11377921
+    ✓ SUZUKI Maruti 800 2004 63322.0 km  Rs.18.2L  Colombo
+  [18/20] https://riyasewana.com/buy/mercedes-benz-c200-d-sale-wattala-11377916
+    ✓ MERCEDES-BENZ C200 D 2017 36000.0 km  Rs.215.0L  Wattala
+  [19/20] https://riyasewana.com/buy/toyota-prius-sale-kurunegala-11377910
+    → skipped (missing: ['Engine (cc)'])
+    → skipped (no price/year)
+  [20/20] https://riyasewana.com/buy/toyota-sai-sale-colombo-11377908
+    ✓ TOYOTA SAI 2009 138000.0 km  Rs.89.5L  Nugegoda
+  [csv] 71 total records saved to riyasewana_new_listings.csv
+  Page 3 done: +15 new (total new: 15)
+
+Page 4/100 — https://riyasewana.com/search/cars?page=4
+  44 new listings found
+  [1/44] https://riyasewana.com/buy/honda-n-box-sale-boralesgamuwa-11368235
+    ✓ HONDA N Box Custom Turbo 2025 1350.0 km  Rs.88.0L  Boralesgamuwa
+  [2/44] https://riyasewana.com/buy/toyota-roomy-g-sale-panadura-11375062
+    ✓ TOYOTA ROOMY G LED X Enon 2024 4500.0 km  Rs.1.0L  Panadura
+  [3/44] https://riyasewana.com/buy/daihatsu-taft-g-sale-colombo-11368924
+    → skipped (no price/year)
+  [4/44] https://riyasewana.com/buy/honda-civic-ek3-sale-galle-11337041
+    ✓ HONDA Civic Ek3 1998 123456.0 km  Rs.1.2L  Galle
+  [5/44] https://riyasewana.com/buy/toyota-axio-sale-maharagama-11377901
+    ✓ TOYOTA Axio 2013 169618.0 km  Rs.90.5L  Maharagama
+  [6/44] https://riyasewana.com/buy/toyota-corolla-ae110-sale-kottawa-11377900
+    ✓ TOYOTA Corolla AE110 KG 2007 192000.0 km  Rs.1.9L  Kottawa
+  [7/44] https://riyasewana.com/buy/suzuki-alto-sale-divulapitiya-11377891
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [8/44] https://riyasewana.com/buy/toyota-corolla-141-sale-moneragala-11377889
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [9/44] https://riyasewana.com/buy/chery-qq-sale-gampaha-11377886
+    ✓ CHERY QQ 2008 89370.0 km  Rs.0.9L  Gampaha
+  [10/44] https://riyasewana.com/buy/honda-fit-gp1-sale-kalutara-11377883
+    ✓ HONDA Fit GP1 NAVI PREMIUM 2012 147000.0 km  Rs.69.8L  Kalutara
+  [11/44] https://riyasewana.com/buy/toyota-axio-x-sale-pannipitiya-11377880
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [12/44] https://riyasewana.com/buy/ford-laser-hatchback-sale-minuwangoda-11377878
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [13/44] https://riyasewana.com/buy/nissan-b14-sale-padukka-11377877
+    → skipped (missing: ['Millage(KM)', 'Town'])
+    → skipped (no price/year)
+  [14/44] https://riyasewana.com/buy/toyota-premio-g-sale-gampaha-11377870
+    ✓ TOYOTA Premio G SUPERIOR 2020 32500.0 km  Rs.164.5L  Gampaha
+  [15/44] https://riyasewana.com/buy/honda-civic-es8-sale-piliyandala-11377869
+    [extract] error: HTTPConnectionPool(host='localhost', port=51379): Read timed out. (read timeout=120)
+    → skipped (no price/year)
+  [16/44] https://riyasewana.com/buy/suzuki-wagon-r-sale-gampaha-11375548
+    ✓ SUZUKI Wagon R Stingray Safety 2014 112400.0 km  Rs.56.8L  Gampaha
+  [17/44] https://riyasewana.com/buy/suzuki-wagon-r-sale-gampaha-11373682
+    ✓ SUZUKI Wagon R Stingray 2014 112400.0 km  Rs.56.8L  Gampaha
+  [18/44] https://riyasewana.com/buy/suzuki-swift-sale-maharagama-11377859
+    ✓ SUZUKI Swift 2004 170000.0 km  Rs.42.2L  Maharagama
+  [19/44] https://riyasewana.com/buy/nissan-ad-wagon-sale-gampaha-11377854
+    ✓ NISSAN AD Wagon Y10 1990 123456.0 km  Rs.18.5L  Gampaha
+  [20/44] https://riyasewana.com/buy/toyota-allion-260-sale-negombo-11377852
+    ✓ TOYOTA Allion 260 G Plus 2013 136000.0 km  Rs.1.4L  Negombo
+  [21/44] https://riyasewana.com/buy/toyota-aqua-urban-sale-panadura-11375494
+    ✓ TOYOTA Aqua Urban 2015 125000.0 km  Rs.81.8L  Panadura
+  [22/44] https://riyasewana.com/buy/honda-grace-ex-sale-pannipitiya-11377849
+    ✓ HONDA Grace EX 2019 105400.0 km  Rs.107.5L  Moratuwa
+  [23/44] https://riyasewana.com/buy/toyota-echo-sale-colombo-11377848
+    ✓ TOYOTA Echo 2000 115000.0 km  Rs.26.2L  Colombo
+  [24/44] https://riyasewana.com/buy/renault-kwid-rxt-sale-homagama-11377840
+    ✓ RENAULT Kwid RXT 2016 168000.0 km  Rs.36.0L  Homagama
+  [25/44] https://riyasewana.com/buy/mercedes-benz-cla-200-sale-colombo-11377819
+    ✓ MERCEDES-BENZ CLA 200 AMG Premium PLUS 2019 55400.0 km  Rs.225.0L  Nugegoda
+  [26/44] https://riyasewana.com/buy/toyota-allion-g-sale-ja-ela-11377837
+    ✓ TOYOTA Allion G PLUS 2016 142000.0 km  Rs.134.5L  Ja-Ela
+  [27/44] https://riyasewana.com/buy/honda-n-box-sale-kurunegala-11377836
+    ✓ HONDA N Box 2019 168000.0 km  Rs.1.7L  Kurunegala
+  [28/44] https://riyasewana.com/buy/toyota-vitz-edition-sale-colombo-11377827
+    ✓ TOYOTA Vitz Edition 02 2018 82000.0 km  Rs.78.8L  Colombo
+  [29/44] https://riyasewana.com/buy/nissan-hb310-sale-kegalle-11377826
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [30/44] https://riyasewana.com/buy/honda-civic-sale-gampaha-11375256
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [31/44] https://riyasewana.com/buy/toyota-corolla-121-sale-pannipitiya-11377824
+    ✓ TOYOTA Corolla 121 G 2007 137250.0 km  Rs.63.8L  Moratuwa
+  [32/44] https://riyasewana.com/buy/mazda-bjp3-sale-galle-11377822
+    ✓ MAZDA Bjp3 2002 262000.0 km  Rs.32.5L  Galle
+  [33/44] https://riyasewana.com/buy/toyota-prius-s-sale-kandy-11377817
+    ✓ TOYOTA Prius S LED 2014 117000.0 km  Rs.111.5L  Kandy
+  [34/44] https://riyasewana.com/buy/honda-fit-gp5-sale-pannipitiya-11377816
+    ✓ HONDA Fit GP5 Hybrid 2015 94200.0 km  Rs.77.5L  Panadura
+  [35/44] https://riyasewana.com/buy/honda-fit-shuttle-sale-kurunegala-11377813
+    ✓ HONDA Fit Shuttle 2014 177000.0 km  Rs.1.8L  Kurunegala
+  [36/44] https://riyasewana.com/buy/mitsubishi-lancer-cs3-sale-kiribathgoda-11375091
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [37/44] https://riyasewana.com/buy/toyota-vitz-sale-colombo-11377808
+    ✓ TOYOTA VITZ 2017 99856.0 km  Rs.1.0L  Kaduwela
+  [38/44] https://riyasewana.com/buy/suzuki-maruti-sale-kegalle-11377807
+    ✓ SUZUKI Maruti 2011 98000.0 km  Rs.22.9L  Kegalle
+  [39/44] https://riyasewana.com/buy/hyundai-stellar-sale-matale-11377803
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [40/44] https://riyasewana.com/buy/toyota-aqua-s-sale-colombo-11375039
+    ✓ TOYOTA Aqua S Grade 2015 162000.0 km  Rs.73.2L  Colombo
+  [41/44] https://riyasewana.com/buy/suzuki-baleno-sale-colombo-11377791
+    ✓ SUZUKI Baleno 2017 158000.0 km  Rs.75.0L  Colombo
+  [42/44] https://riyasewana.com/buy/suzuki-maruti-sale-kurunegala-11377790
+    ✓ SUZUKI Maruti 2006 88526.0 km  Rs.19.9L  Kurunegala
+  [43/44] https://riyasewana.com/buy/toyota-corolla-121-sale-peliyagoda-11375003
+    ✓ TOYOTA Corolla 121 2006 155000.0 km  Rs.51.5L  Peliyagoda
+  [44/44] https://riyasewana.com/buy/mercedes-benz-s300-sale-colombo-11377787
+    ✓ MERCEDES-BENZ S300 2010 98000.0 km  Rs.195.0L  Colombo
+  [csv] 104 total records saved to riyasewana_new_listings.csv
+  Page 4 done: +33 new (total new: 48)
+
+Page 5/100 — https://riyasewana.com/search/cars?page=5
+  23 new listings found
+  [1/23] https://riyasewana.com/buy/toyota-aqua-sale-colombo-11371558
+    ✓ TOYOTA Aqua 2013 170000.0 km  Rs.67.5L  Colombo
+  [2/23] https://riyasewana.com/buy/nissan-cefiro-a33-sale-pannipitiya-11369063
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [3/23] https://riyasewana.com/buy/toyota-vitz-sale-negombo-11355181
+    ✓ TOYOTA Vitz 2015 76000.0 km  Rs.71.0L  Negombo
+  [4/23] https://riyasewana.com/buy/mazda-familia-sale-ragama-11377780
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [5/23] https://riyasewana.com/buy/toyota-aqua-s-sale-colombo-11377778
+    ✓ TOYOTA AQUA S Grade 2013 115217.0 km  Rs.1.2L  Kaduwela
+  [6/23] https://riyasewana.com/buy/hyundai-accent-sale-panadura-11377773
+    ✓ HYUNDAI Accent 2001 154000.0 km  Rs.23.2L  Panadura
+  [7/23] https://riyasewana.com/buy/suzuki-alto-lxi-sale-padukka-11377765
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [8/23] https://riyasewana.com/buy/suzuki-alto-sale-embilipitiya-11377763
+    ✓ SUZUKI Alto 2015 1012200.0 km  Rs.36.4L  Embilipitiya
+  [9/23] https://riyasewana.com/buy/bmw-520d-sale-boralesgamuwa-11377758
+    ✓ BMW 520D 2012 155000.0 km  Rs.157.0L  Boralesgamuwa
+  [10/23] https://riyasewana.com/buy/toyota-vitz-sale-gampaha-11377757
+    ✓ TOYOTA Vitz 2019 60000.0 km  Rs.0.6L  Gampaha
+  [11/23] https://riyasewana.com/buy/micro-panda-sale-piliyandala-11377741
+    ✓ MICRO Panda 2015 97000.0 km  Rs.31.0L  Piliyandala
+  [12/23] https://riyasewana.com/buy/nissan-wingroad-wfy11-sale-colombo-11377737
+    ✓ NISSAN Wingroad WFY11 2003 175000.0 km  Rs.32.8L  Colombo
+  [13/23] https://riyasewana.com/buy/toyota-corolla-dx-sale-dehiwala-mount-lavinia-11374031
+    ✓ TOYOTA Corolla DX Wagon KE72 1987 185000.0 km  Rs.16.2L  Dehiwala
+  [14/23] https://riyasewana.com/buy/bmw-e36-316i-sale-homagama-11377735
+    ✓ BMW E36 316i 1992 165000.0 km  Rs.42.8L  Homagama
+  [15/23] https://riyasewana.com/buy/toyota-aqua-sale-nugegoda-11377734
+    ✓ TOYOTA Aqua 2012 134000.0 km  Rs.67.0L  Nugegoda
+  [16/23] https://riyasewana.com/buy/suzuki-wagon-r-sale-colombo-11377721
+    ✓ SUZUKI Wagon R 2007 126000.0 km  Rs.34.5L  Colombo
+  [17/23] https://riyasewana.com/buy/toyota-corolla-ce110-sale-colombo-11377713
+    ✓ TOYOTA Corolla CE110 SE Saloon 1997 25000.0 km  Rs.30.8L  Colombo
+  [18/23] https://riyasewana.com/buy/suzuki-swift-sale-mirigama-11377712
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [19/23] https://riyasewana.com/buy/perodua-viva-elite-sale-malabe-11377711
+    ✓ PERODUA Viva Elite 2011 101000.0 km  Rs.43.9L  Malabe
+  [20/23] https://riyasewana.com/buy/toyota-premio-sale-kurunegala-11377709
+    ✓ TOYOTA Premio 2014 205000.0 km  Rs.110.0L  Kurunegala
+  [21/23] https://riyasewana.com/buy/suzuki-maruti-800-sale-kadawatha-11377706
+    ✓ SUZUKI Maruti 800 2011 29000.0 km  Rs.22.6L  Kadawatha
+  [22/23] https://riyasewana.com/buy/nissan-dayz-sale-kegalle-11377704
+    ✓ NISSAN Dayz 2024 16400.0 km  Rs.0.2L  Kegalle
+  [23/23] https://riyasewana.com/buy/suzuki-swift-beetle-sale-nugegoda-11377703
+    ✓ SUZUKI Swift Beetle 2004 162000.0 km  Rs.1.6L  Nugegoda
+  [csv] 123 total records saved to riyasewana_new_listings.csv
+  Page 5 done: +19 new (total new: 67)
+
+Page 6/100 — https://riyasewana.com/search/cars?page=6
+  41 new listings found
+  [1/41] https://riyasewana.com/buy/toyota-yaris-g-sale-colombo-11359003
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [2/41] https://riyasewana.com/buy/suzuki-wagon-r-sale-batticaloa-11376233
+    ✓ SUZUKI Wagon R FX 2023 15600.0 km  Rs.72.5L  Batticaloa
+  [3/41] https://riyasewana.com/buy/suzuki-hustler-sale-colombo-11345017
+    ✓ SUZUKI Hustler 2016 112000.0 km  Rs.59.5L  Colombo
+  [4/41] https://riyasewana.com/buy/honda-grace-sale-kotte-11344906
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [5/41] https://riyasewana.com/buy/micro-panda-sale-piliyandala-11377702
+    ✓ MICRO Panda 2014 155000.0 km  Rs.27.9L  Piliyandala
+  [6/41] https://riyasewana.com/buy/toyota-corona-sale-gampaha-11377699
+    ✓ TOYOTA Corona 2026 337000.0 km  Rs.10.8L  Gampaha
+  [7/41] https://riyasewana.com/buy/honda-fit-gp1-sale-nugegoda-11377697
+    ✓ HONDA Fit GP1 2011 121000.0 km  Rs.59.8L  Nugegoda
+  [8/41] https://riyasewana.com/buy/chevrolet-aveo-sale-ragama-11377696
+    ✓ CHEVROLET Aveo 2008 129453.0 km  Rs.29.5L  Kadawatha
+  [9/41] https://riyasewana.com/buy/nissan-sunny-fb14-sale-kurunegala-11377695
+    ✓ NISSAN SUNNY FB14 EX SALOON 1996 220000.0 km  Rs.29.8L  Kurunegala
+  [10/41] https://riyasewana.com/buy/honda-fit-gp1-sale-nugegoda-11377687
+    ✓ HONDA FIT GP1 SHES 2013 142000.0 km  Rs.68.9L  Nugegoda
+  [11/41] https://riyasewana.com/buy/suzuki-wagon-r-sale-negombo-11377685
+    ✓ SUZUKI Wagon R FX Safety 2018 128000.0 km  Rs.63.9L  Negombo
+  [12/41] https://riyasewana.com/buy/toyota-yaris-sale-moratuwa-11377680
+    ✓ TOYOTA Yaris 2023 61500.0 km  Rs.89.5L  Moratuwa
+  [13/41] https://riyasewana.com/buy/toyota-allion-260-sale-anuradapura-11377679
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [14/41] https://riyasewana.com/buy/suzuki-swift-sale-gampaha-11377673
+    ✓ SUZUKI Swift 2004 167000.0 km  Rs.1.7L  Gampaha
+  [15/41] https://riyasewana.com/buy/nissan-fb15-sale-kurunegala-11377672
+    ✓ NISSAN FB15 2003 198000.0 km  Rs.40.2L  Kurunegala
+  [16/41] https://riyasewana.com/buy/nissan-march-k11-sale-kurunegala-11373695
+    ✓ NISSAN March K11 2000 98600.0 km  Rs.32.0L  Kurunegala
+  [17/41] https://riyasewana.com/buy/perodua-kenari-sale-kalutara-11377668
+    ✓ PERODUA Kenari 2008 112000.0 km  Rs.34.9L  Kalutara
+  [18/41] https://riyasewana.com/buy/toyota-aqua-s-sale-nugegoda-11377667
+    ✓ TOYOTA Aqua S Grade 2014 58000.0 km  Rs.79.0L  Nugegoda
+  [19/41] https://riyasewana.com/buy/toyota-belta-sale-badulla-11377664
+    ✓ TOYOTA Belta 2008 153000.0 km  Rs.63.0L  Badulla
+  [20/41] https://riyasewana.com/buy/toyota-allion-sale-colombo-11377662
+    ✓ TOYOTA Allion 2010 134000.0 km  Rs.87.8L  Colombo
+  [21/41] https://riyasewana.com/buy/toyota-premio-g-sale-nugegoda-11377659
+    ✓ TOYOTA Premio G Superior 2018 129000.0 km  Rs.142.9L  Nugegoda
+  [22/41] https://riyasewana.com/buy/hyundai-accent-sale-nugegoda-11377658
+    ✓ HYUNDAI Accent 2011 146000.0 km  Rs.1.5L  Nugegoda
+  [23/41] https://riyasewana.com/buy/toyota-aqua-sale-kurunegala-11373385
+    ✓ TOYOTA Aqua 2015 122136.0 km  Rs.86.5L  Kurunegala
+  [24/41] https://riyasewana.com/buy/micro-panda-sale-bandaragama-11377657
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [25/41] https://riyasewana.com/buy/suzuki-maruti-sale-homagama-11377656
+    ✓ SUZUKI Maruti 2005 71554.0 km  Rs.0.7L  Homagama
+  [26/41] https://riyasewana.com/buy/micro-panda-sale-kaduwela-11377650
+    ✓ MICRO Panda 2017 69194.0 km  Rs.34.9L  Kaduwela
+  [27/41] https://riyasewana.com/buy/honda-grace-sale-piliyandala-11377649
+    ✓ HONDA Grace 2014 160000.0 km  Rs.1.6L  Piliyandala
+  [28/41] https://riyasewana.com/buy/nissan-sunny-sale-maharagama-11377641
+    ✓ NISSAN Sunny 1999 175000.0 km  Rs.26.9L  Maharagama
+  [29/41] https://riyasewana.com/buy/suzuki-swift-sale-colombo-11377639
+    ✓ SUZUKI Swift 2004 140000.0 km  Rs.41.9L  Colombo
+  [30/41] https://riyasewana.com/buy/dfsk-glory-330-sale-bandaragama-11377635
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [31/41] https://riyasewana.com/buy/nissan-fb14-sale-horana-11377634
+    ✓ NISSAN FB14 2001 185000.0 km  Rs.27.8L  Horana
+  [32/41] https://riyasewana.com/buy/toyota-carina-aa60-sale-avissawella-11377633
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [33/41] https://riyasewana.com/buy/toyota-vitz-sale-nugegoda-11377628
+    ✓ TOYOTA Vitz 2007 125000.0 km  Rs.52.5L  Nugegoda
+  [34/41] https://riyasewana.com/buy/toyota-corona-sale-gampaha-11377626
+    → duplicate (TOYOTA Corona 2026 Rs.10.8L)
+  [35/41] https://riyasewana.com/buy/suzuki-celerio-sale-kalutara-11377624
+    ✓ SUZUKI Celerio 2017 98000.0 km  Rs.1.0L  Kalutara
+  [36/41] https://riyasewana.com/buy/nissan-b310-sale-ja-ela-11373033
+    ✓ NISSAN B310 2026 123456.0 km  Rs.6.8L  Ja-Ela
+  [37/41] https://riyasewana.com/buy/toyota-allion-sale-gampaha-11377621
+    ✓ TOYOTA Allion 2008 190000.0 km  Rs.79.2L  Gampaha
+  [38/41] https://riyasewana.com/buy/toyota-corolla-ce106-sale-matale-11377619
+    ✓ TOYOTA Corolla CE106 2001 1234.0 km  Rs.27.5L  Matale
+  [39/41] https://riyasewana.com/buy/toyota-vitz-u-sale-wennappuwa-11372884
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [40/41] https://riyasewana.com/buy/toyota-ist-sale-galle-11377616
+    ✓ TOYOTA IST 2007 80000.0 km  Rs.685.0L  Galle
+  [41/41] https://riyasewana.com/buy/suzuki-alto-sale-matara-11377609
+    ✓ SUZUKI Alto 2007 116000.0 km  Rs.27.8L  Matara
+  [csv] 156 total records saved to riyasewana_new_listings.csv
+  Page 6 done: +33 new (total new: 100)
+
+Page 7/100 — https://riyasewana.com/search/cars?page=7
+  39 new listings found
+  [1/39] https://riyasewana.com/buy/nissan-tiida-latio-sale-colombo-11374162
+    ✓ NISSAN Tiida Latio 2008 161500.0 km  Rs.52.5L  Colombo
+  [2/39] https://riyasewana.com/buy/suzuki-wagon-r-sale-ambalangoda-11369506
+    ✓ SUZUKI Wagon R FX 2017 90500.0 km  Rs.63.5L  Ambalangoda
+  [3/39] https://riyasewana.com/buy/daihatsu-mira-l-sale-gampaha-11374058
+    ✓ DAIHATSU Mira L Grade 2024 1634.0 km  Rs.62.9L  Gampaha
+  [4/39] https://riyasewana.com/buy/honda-civic-es8-sale-nugegoda-11377607
+    ✓ HONDA Civic ES8 2004 156000.0 km  Rs.53.0L  Nugegoda
+  [5/39] https://riyasewana.com/buy/perodua-kelisa-sale-bandaragama-11377606
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [6/39] https://riyasewana.com/buy/suzuki-alto-sale-nittambuwa-11377604
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [7/39] https://riyasewana.com/buy/perodua-viva-elite-sale-matugama-11377602
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [8/39] https://riyasewana.com/buy/nissan-b11-sale-eheliyagoda-11377598
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [9/39] https://riyasewana.com/buy/honda-airwave-sale-gampaha-11372498
+    ✓ HONDA Airwave 2006 218000.0 km  Rs.57.0L  Gampaha
+  [10/39] https://riyasewana.com/buy/toyota-vitz-sale-nugegoda-11377594
+    ✓ TOYOTA Vitz 2001 191000.0 km  Rs.38.8L  Nugegoda
+  [11/39] https://riyasewana.com/buy/chery-qq-sale-kegalle-11377593
+    ✓ CHERY QQ 2011 82000.0 km  Rs.20.5L  Kegalle
+  [12/39] https://riyasewana.com/buy/mercedes-benz-c230-sale-gampaha-11377590
+    ✓ MERCEDES-BENZ C230 2006 109651.0 km  Rs.88.8L  Gampaha
+  [13/39] https://riyasewana.com/buy/renault-kwid-sale-bandaragama-11377583
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [14/39] https://riyasewana.com/buy/datsun-redi-go-sale-galle-11372236
+    ✓ DATSUN Redi-GO 2017 79000.0 km  Rs.32.8L  Galle
+  [15/39] https://riyasewana.com/buy/nissan-fb15-sale-kurunegala-11377581
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [16/39] https://riyasewana.com/buy/perodua-viva-elite-sale-malabe-11377580
+    ✓ PERODUA Viva Elite 2011 114920.0 km  Rs.42.0L  Malabe
+  [17/39] https://riyasewana.com/buy/suzuki-wagon-r-sale-nattandiya-11377579
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [18/39] https://riyasewana.com/buy/suzuki-spacia-sale-hikkaduwa-11377576
+    ✓ SUZUKI SPACIA 2016 135.0 km  Rs.57.7L  Hikkaduwa
+  [19/39] https://riyasewana.com/buy/micro-panda-cross-sale-dehiwala-mount-lavinia-11377571
+    ✓ MICRO Panda Cross 2017 1234.0 km  Rs.35.5L  Dehiwala
+  [20/39] https://riyasewana.com/buy/mazda-premacy-sale-anuradapura-11377569
+    ✓ MAZDA Premacy 1999 201600.0 km  Rs.39.5L  Anuradhapura
+  [21/39] https://riyasewana.com/buy/toyota-allion-sale-colombo-11377568
+    ✓ TOYOTA Allion 2003 178100.0 km  Rs.64.0L  Colombo
+  [22/39] https://riyasewana.com/buy/mercedes-benz-cla-180-sale-ja-ela-11377567
+    ✓ MERCEDES-BENZ CLA 180 AMG Premium Plus 2017 93700.0 km  Rs.195.0L  Ja-Ela
+  [23/39] https://riyasewana.com/buy/toyota-prius-s-sale-kuliyapitiya-11377565
+    [extract] error: HTTPConnectionPool(host='localhost', port=51379): Read timed out. (read timeout=120)
+    → skipped (no price/year)
+  [24/39] https://riyasewana.com/buy/suzuki-maruti-sale-kandy-11377563
+    [extract] error: HTTPConnectionPool(host='localhost', port=51379): Read timed out. (read timeout=120)
+    → skipped (no price/year)
+  [25/39] https://riyasewana.com/buy/daihatsu-charade-g101-sale-nittambuwa-11371270
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [26/39] https://riyasewana.com/buy/honda-fit-gd1-sale-piliyandala-11377562
+    ✓ HONDA Fit Gd1 2007 141000.0 km  Rs.54.8L  Piliyandala
+  [27/39] https://riyasewana.com/buy/nissan-b15-sale-bandaragama-11377561
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [28/39] https://riyasewana.com/buy/renault-kwid-rxt-sale-moratuwa-11371208
+    ✓ RENAULT KWID RXT 2016 60520.0 km  Rs.35.0L  Moratuwa
+  [29/39] https://riyasewana.com/buy/nissan-fb14-sale-panadura-11377560
+    ✓ NISSAN FB14 1995 230000.0 km  Rs.29.9L  Panadura
+  [30/39] https://riyasewana.com/buy/tata-nano-sale-maharagama-11377555
+    ✓ TATA Nano 2015 122000.0 km  Rs.19.8L  Maharagama
+  [31/39] https://riyasewana.com/buy/mazda-axela-sale-piliyandala-11377553
+    ✓ MAZDA Axela 2007 141000.0 km  Rs.56.8L  Piliyandala
+  [32/39] https://riyasewana.com/buy/toyota-carina-aa60-sale-balangoda-11377552
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [33/39] https://riyasewana.com/buy/toyota-starlet-ep82-sale-homagama-11377546
+    → skipped (no price/year)
+  [34/39] https://riyasewana.com/buy/suzuki-wagon-r-sale-galle-11370982
+    ✓ SUZUKI Wagon R FX 2018 86000.0 km  Rs.63.5L  Galle
+  [35/39] https://riyasewana.com/buy/honda-fit-gd1-sale-piliyandala-11377545
+    ✓ HONDA Fit Gd1 2007 128000.0 km  Rs.51.8L  Piliyandala
+  [36/39] https://riyasewana.com/buy/micro-panda-cross-sale-bandaragama-11377541
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [37/39] https://riyasewana.com/buy/suzuki-swift-sale-colombo-11377539
+    ✓ SUZUKI Swift 2004 170000.0 km  Rs.1.7L  Moratuwa
+  [38/39] https://riyasewana.com/buy/suzuki-alto-sale-anuradapura-11377538
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [39/39] https://riyasewana.com/buy/suzuki-spacia-sale-hikkaduwa-11377529
+    → skipped (no price/year)
+  [csv] 179 total records saved to riyasewana_new_listings.csv
+  Page 7 done: +23 new (total new: 123)
+
+Page 8/100 — https://riyasewana.com/search/cars?page=8
+  4 new listings found
+  [1/4] https://riyasewana.com/buy/suzuki-alto-sale-ragama-11354414
+    ✓ SUZUKI Alto 2015 79000.0 km  Rs.39.5L  Ragama
+  [2/4] https://riyasewana.com/buy/toyota-axio-g-sale-kalutara-11377271
+    ✓ TOYOTA Axio G Grade 2015 191000.0 km  Rs.85.8L  Kalutara
+  [3/4] https://riyasewana.com/buy/bmw-318i-m-sale-colombo-11355957
+    ✓ BMW 318i M Sport 2017 112000.0 km  Rs.176.0L  Homagama
+  [4/4] https://riyasewana.com/buy/toyota-yaris-sale-colombo-11371770
+    ✓ TOYOTA YARIS 2024 7000.0 km  Rs.95.0L  Colombo
+  [csv] 183 total records saved to riyasewana_new_listings.csv
+  Page 8 done: +4 new (total new: 127)
+
+Page 9/100 — https://riyasewana.com/search/cars?page=9
+  16 new listings found
+  [1/16] https://riyasewana.com/buy/nissan-dayz-highway-sale-boralesgamuwa-11344908
+    ✓ NISSAN Dayz Highway Star 2025 1350.0 km  Rs.83.5L  Boralesgamuwa
+  [2/16] https://riyasewana.com/buy/toyota-camry-sale-kottawa-11346399
+    ✓ TOYOTA Camry 2015 120000.0 km  Rs.149.8L  Kottawa
+  [3/16] https://riyasewana.com/buy/suzuki-celerio-sale-dehiwala-mount-lavinia-11377527
+    ✓ SUZUKI Celerio 2015 83500.0 km  Rs.48.0L  Dehiwala
+  [4/16] https://riyasewana.com/buy/toyota-aqua-sale-colombo-11377519
+    ✓ TOYOTA Aqua 2013 70000.0 km  Rs.69.0L  Colombo
+  [5/16] https://riyasewana.com/buy/toyota-vitz-sale-malabe-11377517
+    ✓ TOYOTA Vitz 2007 122000.0 km  Rs.57.9L  Malabe
+  [6/16] https://riyasewana.com/buy/micro-panda-sale-bandaragama-11377516
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [7/16] https://riyasewana.com/buy/suzuki-maruti-sale-nittambuwa-11377513
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [8/16] https://riyasewana.com/buy/nissan-cedric-skyline-sale-kandy-11377510
+    ✓ NISSAN Cedric Skyline GT Sport 2001 178000.0 km  Rs.65.8L  Kandy
+  [9/16] https://riyasewana.com/buy/toyota-vitz-sale-malabe-11377506
+    ✓ TOYOTA Vitz 2015 88200.0 km  Rs.75.9L  Malabe
+  [10/16] https://riyasewana.com/buy/toyota-corolla-121-sale-nittambuwa-11377505
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [11/16] https://riyasewana.com/buy/suzuki-wagon-r-sale-kadawatha-11377501
+    ✓ SUZUKI Wagon R FZ Safety 2018 81600.0 km  Rs.67.5L  Kadawatha
+  [12/16] https://riyasewana.com/buy/nissan-tiida-latio-sale-piliyandala-11377499
+    ✓ NISSAN Tiida Latio 2008 128000.0 km  Rs.52.8L  Piliyandala
+  [13/16] https://riyasewana.com/buy/toyota-vitz-edition-sale-malabe-11377497
+    ✓ TOYOTA Vitz EDITION 2 2018 118600.0 km  Rs.1.2L  Malabe
+  [14/16] https://riyasewana.com/buy/tata-indigo-sale-gampola-11377496
+    ✓ TATA Indigo 2007 5000.0 km  Rs.20.0L  Gampola
+  [15/16] https://riyasewana.com/buy/peugeot-206-sale-wattala-11377491
+    ✓ PEUGEOT 206 2001 132000.0 km  Rs.33.5L  Wattala
+  [16/16] https://riyasewana.com/buy/suzuki-wagon-r-sale-matara-11377489
+    ✓ SUZUKI Wagon R Fz 2017 115000.0 km  Rs.64.4L  Matara
+  [csv] 196 total records saved to riyasewana_new_listings.csv
+  Page 9 done: +13 new (total new: 140)
+
+Page 10/100 — https://riyasewana.com/search/cars?page=10
+  32 new listings found
+  [1/32] https://riyasewana.com/buy/toyota-yaris-sale-piliyandala-11377484
+    ✓ TOYOTA Yaris 2012 141000.0 km  Rs.67.8L  Piliyandala
+  [2/32] https://riyasewana.com/buy/toyota-starlet-ep82-sale-homagama-11377479
+    → skipped (no price/year)
+  [3/32] https://riyasewana.com/buy/toyota-corolla-141-sale-piliyandala-11377477
+    ✓ TOYOTA Corolla 141 2008 136000.0 km  Rs.63.8L  Piliyandala
+  [4/32] https://riyasewana.com/buy/toyota-passo-sale-kiribathgoda-11377474
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [5/32] https://riyasewana.com/buy/micro-panda-lc-sale-kandy-11377466
+    ✓ MICRO Panda Lc 2011 120321.0 km  Rs.25.2L  Kandy
+  [6/32] https://riyasewana.com/buy/suzuki-swift-sale-kurunegala-11377455
+    ✓ SUZUKI Swift 2003 162000.0 km  Rs.43.0L  Kurunegala
+  [7/32] https://riyasewana.com/buy/suzuki-maruti-800-sale-panadura-11377454
+    ✓ SUZUKI Maruti 800 2011 38800.0 km  Rs.24.2L  Panadura
+  [8/32] https://riyasewana.com/buy/honda-n-wgn-sale-ambalangoda-11377452
+    ✓ HONDA N WGN 2016 45000.0 km  Rs.63.0L  Ambalangoda
+  [9/32] https://riyasewana.com/buy/nissan-march-k11-sale-kandana-11377449
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [10/32] https://riyasewana.com/buy/suzuki-wagon-r-sale-dankotuwa-11377448
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [11/32] https://riyasewana.com/buy/toyota-prius-sale-matara-11377446
+    ✓ TOYOTA Prius 2012 208000.0 km  Rs.2.1L  Matara
+  [12/32] https://riyasewana.com/buy/nissan-bluebird-sale-kandy-11377445
+    ✓ NISSAN Bluebird 1998 300000.0 km  Rs.25.5L  Kandy
+  [13/32] https://riyasewana.com/buy/suzuki-maruti-sale-ratnapura-11377443
+    ✓ SUZUKI Maruti 2011 109000.0 km  Rs.24.9L  Ratnapura
+  [14/32] https://riyasewana.com/buy/perodua-axia-sale-piliyandala-11377442
+    ✓ PERODUA Axia 2015 123000.0 km  Rs.52.8L  Piliyandala
+  [15/32] https://riyasewana.com/buy/chery-qq-sale-gampaha-11377438
+    ✓ CHERY QQ 2007 89370.0 km  Rs.23.8L  Gampaha
+  [16/32] https://riyasewana.com/buy/nissan-wingroad-y12-sale-piliyandala-11377435
+    ✓ NISSAN Wingroad Y12 2009 170000.0 km  Rs.49.0L  Piliyandala
+  [17/32] https://riyasewana.com/buy/hyundai-santro-sale-kandy-11377434
+    ✓ HYUNDAI Santro 2005 69300.0 km  Rs.21.9L  Kandy
+  [18/32] https://riyasewana.com/buy/toyota-aqua-g-sale-matara-11377422
+    ✓ TOYOTA Aqua G Grade 2014 143000.0 km  Rs.1.4L  Matara
+  [19/32] https://riyasewana.com/buy/daihatsu-mira-sale-nittambuwa-11377415
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [20/32] https://riyasewana.com/buy/renault-kwid-sale-malabe-11377409
+    ✓ RENAULT Kwid 2016 179200.0 km  Rs.36.9L  Malabe
+  [21/32] https://riyasewana.com/buy/toyota-premio-sale-gampaha-11377408
+    ✓ TOYOTA Premio 2013 132000.0 km  Rs.127.5L  Gampaha
+  [22/32] https://riyasewana.com/buy/renault-kwid-sale-malabe-11377401
+    [extract] error: HTTPConnectionPool(host='localhost', port=51379): Read timed out. (read timeout=120)
+    → skipped (no price/year)
+  [23/32] https://riyasewana.com/buy/chevrolet-cruze-gm-sale-homagama-11377398
+    ✓ CHEVROLET Cruze GM Limited 2003 191000.0 km  Rs.37.8L  Homagama
+  [24/32] https://riyasewana.com/buy/micro-panda-sale-horana-11377396
+    ✓ MICRO Panda 2016 82000.0 km  Rs.31.5L  Horana
+  [25/32] https://riyasewana.com/buy/toyota-allion-240-sale-kurunegala-11377395
+    ✓ TOYOTA Allion 240 2003 145000.0 km  Rs.70.0L  Kurunegala
+  [26/32] https://riyasewana.com/buy/honda-fit-gp1-sale-kuliyapitiya-11377394
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [27/32] https://riyasewana.com/buy/nissan-wingroad-sale-gampaha-11377392
+    ✓ NISSAN Wingroad 1998 172506.0 km  Rs.29.8L  Gampaha
+  [28/32] https://riyasewana.com/buy/toyota-prius-nhw20-sale-piliyandala-11377385
+    ✓ TOYOTA Prius NHW20 2012 179000.0 km  Rs.1.8L  Piliyandala
+  [29/32] https://riyasewana.com/buy/toyota-dx-wagon-sale-kandy-11377383
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [30/32] https://riyasewana.com/buy/nissan-fb15-sale-divulapitiya-11377382
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [31/32] https://riyasewana.com/buy/mitsubishi-lancer-sale-malabe-11377377
+    ✓ MITSUBISHI Lancer 2008 222200.0 km  Rs.69.9L  Malabe
+  [32/32] https://riyasewana.com/buy/toyota-allion-sale-kiribathgoda-11377366
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [csv] 218 total records saved to riyasewana_new_listings.csv
+  Page 10 done: +22 new (total new: 162)
+
+Page 11/100 — https://riyasewana.com/search/cars?page=11
+  31 new listings found
+  [1/31] https://riyasewana.com/buy/toyota-pixis-g-sale-boralesgamuwa-11344883
+    ✓ TOYOTA Pixis G Grade 2024 3900.0 km  Rs.73.5L  Boralesgamuwa
+  [2/31] https://riyasewana.com/buy/daihatsu-mira-l-sale-gampaha-11373775
+    ✓ DAIHATSU Mira L Grade 2024 4180.0 km  Rs.63.5L  Gampaha
+  [3/31] https://riyasewana.com/buy/suzuki-wagon-r-sale-kaduwela-11377358
+    ✓ SUZUKI WAGON R FX SAFETY HYBRID 2025 10800.0 km  Rs.25.0L  Kaduwela
+  [4/31] https://riyasewana.com/buy/nissan-leaf-sale-kadawatha-11377356
+    → skipped (missing: ['Engine (cc)'])
+    → skipped (no price/year)
+  [5/31] https://riyasewana.com/buy/nissan-presea-sale-homagama-11377355
+    [extract] error: HTTPConnectionPool(host='localhost', port=51379): Read timed out. (read timeout=120)
+    → skipped (no price/year)
+  [6/31] https://riyasewana.com/buy/nissan-sunny-sale-colombo-11377351
+    ✓ NISSAN Sunny 1987 250000.0 km  Rs.15.9L  Piliyandala
+  [7/31] https://riyasewana.com/buy/kia-picanto-sale-malabe-11377350
+    ✓ KIA Picanto 2011 97000.0 km  Rs.46.9L  Malabe
+  [8/31] https://riyasewana.com/buy/toyota-vitz-safety-sale-kadawatha-11377347
+    ✓ TOYOTA Vitz Safety Edition 2018 79000.0 km  Rs.78.0L  Kadawatha
+  [9/31] https://riyasewana.com/buy/mitsubishi-lancer-cs2-sale-homagama-11377346
+    ✓ MITSUBISHI Lancer CS2 2008 100000.0 km  Rs.1.0L  Homagama
+  [10/31] https://riyasewana.com/buy/mitsubishi-mirage-sale-kadawatha-11377345
+    ✓ MITSUBISHI Mirage 2013 220000.0 km  Rs.48.8L  Kadawatha
+  [11/31] https://riyasewana.com/buy/micro-panda-sale-kaduwela-11377343
+    ✓ MICRO Panda 2017 105000.0 km  Rs.34.9L  Kaduwela
+  [12/31] https://riyasewana.com/buy/suzuki-maruti-800-sale-kandy-11377341
+    ✓ SUZUKI MARUTI 800 2011 77000.0 km  Rs.24.8L  Kandy
+  [13/31] https://riyasewana.com/buy/suzuki-alto-japan-sale-boralesgamuwa-11377339
+    ✓ SUZUKI Alto Japan 2017 113000.0 km  Rs.49.2L  Boralesgamuwa
+  [14/31] https://riyasewana.com/buy/suzuki-alto-sport-sale-avissawella-11377338
+    ✓ SUZUKI Alto Sport 2017 150000.0 km  Rs.37.9L  Avissawella
+  [15/31] https://riyasewana.com/buy/hyundai-accent-sale-colombo-11377336
+    ✓ HYUNDAI Accent 2001 127000.0 km  Rs.24.9L  Piliyandala
+  [16/31] https://riyasewana.com/buy/nissan-wingroad-sale-gampaha-11377334
+    ✓ NISSAN Wingroad 1997 187470.0 km  Rs.20.9L  Gampaha
+  [17/31] https://riyasewana.com/buy/suzuki-wagon-r-sale-kaduwela-11377327
+    ✓ SUZUKI Wagon R FZ 2018 91260.0 km  Rs.66.9L  Kaduwela
+  [18/31] https://riyasewana.com/buy/toyota-yaris-sale-matara-11377323
+    ✓ TOYOTA Yaris 2007 172000.0 km  Rs.1.7L  Matara
+  [19/31] https://riyasewana.com/buy/kia-sephia-sale-gampaha-11377322
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [20/31] https://riyasewana.com/buy/mazda-demio-sale-colombo-11377320
+    ✓ MAZDA Demio 2009 96000.0 km  Rs.49.5L  Piliyandala
+  [21/31] https://riyasewana.com/buy/datsun-redi-go-sale-kaduwela-11377318
+    [extract] error: HTTPConnectionPool(host='localhost', port=51379): Read timed out. (read timeout=120)
+    → skipped (no price/year)
+  [22/31] https://riyasewana.com/buy/toyota-vitz-sale-kandy-11377314
+    ✓ TOYOTA Vitz 2009 153000.0 km  Rs.1.5L  Katugastota
+  [23/31] https://riyasewana.com/buy/chery-qq-sale-kaduwela-11377310
+    [extract] error: HTTPConnectionPool(host='localhost', port=51379): Read timed out. (read timeout=120)
+    → skipped (no price/year)
+  [24/31] https://riyasewana.com/buy/suzuki-estilo-sale-moratuwa-11377305
+    ✓ SUZUKI Estilo 2010 96000.0 km  Rs.34.9L  Moratuwa
+  [25/31] https://riyasewana.com/buy/nissan-march-k11-sale-kaduwela-11377303
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [26/31] https://riyasewana.com/buy/toyota-yaris-sale-colombo-11377294
+    ✓ TOYOTA Yaris 2017 82500.0 km  Rs.94.5L  Colombo
+  [27/31] https://riyasewana.com/buy/suzuki-wagon-r-sale-kaduwela-11377291
+    ✓ SUZUKI Wagon R FZ Safety 2017 89708.0 km  Rs.66.8L  Kaduwela
+  [28/31] https://riyasewana.com/buy/nissan-sunny-sale-galle-11377288
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [29/31] https://riyasewana.com/buy/suzuki-wagon-r-sale-matara-11377287
+    ✓ SUZUKI Wagon R Stingray 2014 132000.0 km  Rs.1.3L  Matara
+  [30/31] https://riyasewana.com/buy/toyota-corolla-ae110-sale-kottawa-11377286
+    ✓ TOYOTA Corolla AE110 Se Saloon 1996 170000.0 km  Rs.22.0L  Kottawa
+  [31/31] https://riyasewana.com/buy/nissan-wingroad-sale-gampaha-11377280
+    → duplicate (NISSAN Wingroad 1997 Rs.20.9L)
+  [csv] 241 total records saved to riyasewana_new_listings.csv
+  Page 11 done: +23 new (total new: 185)
+
+Page 12/100 — https://riyasewana.com/search/cars?page=12
+  15 new listings found
+  [1/15] https://riyasewana.com/buy/micro-panda-sale-piliyandala-11370197
+    ✓ MICRO Panda 2018 34000.0 km  Rs.38.0L  Piliyandala
+  [2/15] https://riyasewana.com/buy/suzuki-spacia-x-sale-colombo-11336179
+    ✓ SUZUKI Spacia X 2024 9300.0 km  Rs.78.0L  Colombo
+  [3/15] https://riyasewana.com/buy/bmw-523i-m5-sale-colombo-11341174
+    ✓ BMW 523I M5 KITTED STAGE 1 REMAPPED 2010 100000.0 km  Rs.169.0L  Colombo
+  [4/15] https://riyasewana.com/buy/suzuki-zen-sale-kaduwela-11377265
+    [extract] error: HTTPConnectionPool(host='localhost', port=51379): Read timed out. (read timeout=120)
+    → skipped (no price/year)
+  [5/15] https://riyasewana.com/buy/nissan-dayz-sale-kegalle-11377261
+    [extract] error: HTTPConnectionPool(host='localhost', port=51379): Read timed out. (read timeout=120)
+    → skipped (no price/year)
+  [6/15] https://riyasewana.com/buy/toyota-dx-wagon-sale-gampaha-11377260
+    → skipped (OPTIONS section not found on listing page)
+    → skipped (no price/year)
+  [7/15] https://riyasewana.com/buy/toyota-aqua-g-sale-ja-ela-11377257
+    ✓ TOYOTA Aqua G Grade 2012 159000.0 km  Rs.70.5L  Ja-Ela
+  [8/15] https://riyasewana.com/buy/suzuki-wagon-r-sale-moneragala-11377255
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [9/15] https://riyasewana.com/buy/toyota-dx-sale-kadawatha-11377253
+    → skipped (missing: ['Millage(KM)'])
+    → skipped (no price/year)
+  [10/15] https://riyasewana.com/buy/chevrolet-beat-lt-sale-gampaha-11377248
+    ✓ CHEVROLET Beat LT 2012 98336.0 km  Rs.35.0L  Gampaha
+  [11/15] https://riyasewana.com/buy/mercedes-benz-w21-e240-sale-nittambuwa-11377247
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [12/15] https://riyasewana.com/buy/toyota-allion-260-sale-hanwella-11377246
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [13/15] https://riyasewana.com/buy/toyota-carina-sale-colombo-11377243
+    ✓ TOYOTA Carina 1987 170000.0 km  Rs.11.9L  Piliyandala
+  [14/15] https://riyasewana.com/buy/daihatsu-charade-sale-gampaha-11377236
+    ✓ DAIHATSU Charade 1985 125123.0 km  Rs.11.2L  Gampaha
+  [15/15] https://riyasewana.com/buy/nissan-fb13-doctor-sale-kurunegala-11377233
+    ✓ NISSAN FB13 Doctor Sunny 1996 192650.0 km  Rs.1.9L  Kurunegala
+  [csv] 249 total records saved to riyasewana_new_listings.csv
+  Page 12 done: +8 new (total new: 193)
+
+Page 13/100 — https://riyasewana.com/search/cars?page=13
+  3 new listings found
+  [1/3] https://riyasewana.com/buy/toyota-corolla-ae110-sale-matara-11360747
+    ✓ TOYOTA Corolla AE110 SE SALOON L GRADE 1998 340000.0 km  Rs.3.4L  Matara
+  [2/3] https://riyasewana.com/buy/toyota-premio-sale-kottawa-11378865
+    ✓ TOYOTA Premio 2019 113789.0 km  Rs.158.0L  Kottawa
+  [3/3] https://riyasewana.com/buy/suzuki-swift-sale-veyangoda-11374084
+    → skipped (missing: ['Town'])
+    → skipped (no price/year)
+  [csv] 251 total records saved to riyasewana_new_listings.csv
+  Page 13 done: +2 new (total new: 195)
+
+[interrupted] saving progress...
+PS C:\Users\sathmi\Desktop\DATA MANGEMENT FRONTEND\backend>
