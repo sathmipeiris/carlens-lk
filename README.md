@@ -29,8 +29,8 @@ This project is a **complete end-to-end machine learning solution** for the Sri 
 
 ✅ **Real-time web scraping** from Riyasewana and IkMan marketplaces  
 ✅ **Advanced data preprocessing** and feature engineering  
-✅ **Multiple ML models** (Linear, Ridge, Random Forest, XGBoost, Custom Neural Networks)  
-✅ **Ensemble methods** for optimal predictions  
+✅ **11 ML algorithms evaluated** (Linear, Tree-Based, Instance-Based, Kernel-Based)  
+✅ **Best model**: Random Forest with 300 trees (92.35% R²)  
 ✅ **Economic indicators** (USD/LKR rates, fuel prices, inflation)  
 ✅ **Time-series forecasting** for price trends  
 ✅ **Modern web dashboard** for predictions and market insights  
